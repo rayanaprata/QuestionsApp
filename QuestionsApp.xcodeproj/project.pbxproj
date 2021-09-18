@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8A9D26F67B6C0030CE01 /* AppDelegate.swift */; };
-		883B8AA026F67B6C0030CE01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8A9F26F67B6C0030CE01 /* SceneDelegate.swift */; };
-		883B8AA226F67B6C0030CE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8AA126F67B6C0030CE01 /* ViewController.swift */; };
-		883B8AA526F67B6C0030CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA326F67B6C0030CE01 /* Main.storyboard */; };
 		883B8AA726F67B6D0030CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA626F67B6D0030CE01 /* Assets.xcassets */; };
 		883B8AAA26F67B6D0030CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA826F67B6D0030CE01 /* LaunchScreen.storyboard */; };
+		883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8ABA26F681310030CE01 /* HomeViewController.swift */; };
+		883B8ABD26F681310030CE01 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B8ABB26F681310030CE01 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		883B8A9A26F67B6C0030CE01 /* QuestionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B8A9D26F67B6C0030CE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		883B8A9F26F67B6C0030CE01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		883B8AA126F67B6C0030CE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		883B8AA426F67B6C0030CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		883B8AA626F67B6D0030CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883B8AA926F67B6D0030CE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		883B8AAB26F67B6D0030CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883B8ABA26F681310030CE01 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		883B8ABB26F681310030CE01 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,46 @@
 		883B8A9C26F67B6C0030CE01 /* QuestionsApp */ = {
 			isa = PBXGroup;
 			children = (
+				883B8AB426F67BBD0030CE01 /* Scenes */,
+				883B8AB326F67BB10030CE01 /* Resources */,
+				883B8AB226F67BA80030CE01 /* Sources */,
+			);
+			path = QuestionsApp;
+			sourceTree = "<group>";
+		};
+		883B8AB226F67BA80030CE01 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				883B8A9D26F67B6C0030CE01 /* AppDelegate.swift */,
-				883B8A9F26F67B6C0030CE01 /* SceneDelegate.swift */,
-				883B8AA126F67B6C0030CE01 /* ViewController.swift */,
-				883B8AA326F67B6C0030CE01 /* Main.storyboard */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		883B8AB326F67BB10030CE01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				883B8AA626F67B6D0030CE01 /* Assets.xcassets */,
 				883B8AA826F67B6D0030CE01 /* LaunchScreen.storyboard */,
 				883B8AAB26F67B6D0030CE01 /* Info.plist */,
 			);
-			path = QuestionsApp;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		883B8AB426F67BBD0030CE01 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				883B8AB926F681210030CE01 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		883B8AB926F681210030CE01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				883B8ABA26F681310030CE01 /* HomeViewController.swift */,
+				883B8ABB26F681310030CE01 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +155,7 @@
 			files = (
 				883B8AAA26F67B6D0030CE01 /* LaunchScreen.storyboard in Resources */,
 				883B8AA726F67B6D0030CE01 /* Assets.xcassets in Resources */,
-				883B8AA526F67B6C0030CE01 /* Main.storyboard in Resources */,
+				883B8ABD26F681310030CE01 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				883B8AA226F67B6C0030CE01 /* ViewController.swift in Sources */,
 				883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */,
-				883B8AA026F67B6C0030CE01 /* SceneDelegate.swift in Sources */,
+				883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		883B8AA326F67B6C0030CE01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				883B8AA426F67B6C0030CE01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		883B8AA826F67B6D0030CE01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,7 +307,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QuestionsApp/Info.plist;
+				INFOPLIST_FILE = QuestionsApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.useacademy.QuestionsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +326,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = QuestionsApp/Info.plist;
+				INFOPLIST_FILE = QuestionsApp/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.useacademy.QuestionsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
