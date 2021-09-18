@@ -17,4 +17,8 @@ class QuestionViewController: UIViewController {
         answerButton.layer.cornerRadius = 30
     }
 
+    @IBAction func handlerButtonNextPage(_ sender: Any) {
+        let viewController = ResultViewController()
+        present(viewController, animated: true, completion: nil)
+    }
 }

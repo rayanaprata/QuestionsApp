@@ -55,6 +55,9 @@
                     <state key="normal" title="Responder">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="handlerButtonNextPage:" destination="-1" eventType="touchUpInside" id="wPR-78-DXH"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
