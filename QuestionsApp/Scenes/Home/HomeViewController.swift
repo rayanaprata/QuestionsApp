@@ -19,5 +19,10 @@ class HomeViewController: UIViewController {
         startView.layer.cornerRadius = 30
         startButton.layer.cornerRadius = 30
     }
-
+    
+    @IBAction func handlerButtonStartQuiz(_ sender: Any) {
+        let viewController = QuestionViewController()
+        present(viewController, animated: true, completion: nil)
+    }
+    
 }

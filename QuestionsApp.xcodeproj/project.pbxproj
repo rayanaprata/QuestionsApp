@@ -12,6 +12,8 @@
 		883B8AAA26F67B6D0030CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA826F67B6D0030CE01 /* LaunchScreen.storyboard */; };
 		883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8ABA26F681310030CE01 /* HomeViewController.swift */; };
 		883B8ABD26F681310030CE01 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B8ABB26F681310030CE01 /* HomeViewController.xib */; };
+		883B8AC126F687DF0030CE01 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8ABF26F687DF0030CE01 /* QuestionViewController.swift */; };
+		883B8AC226F687DF0030CE01 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AC026F687DF0030CE01 /* QuestionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		883B8AAB26F67B6D0030CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		883B8ABA26F681310030CE01 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		883B8ABB26F681310030CE01 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		883B8ABF26F687DF0030CE01 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		883B8AC026F687DF0030CE01 /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		883B8AB426F67BBD0030CE01 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				883B8ABE26F687D20030CE01 /* Question */,
 				883B8AB926F681210030CE01 /* Home */,
 			);
 			path = Scenes;
@@ -94,6 +99,15 @@
 				883B8ABB26F681310030CE01 /* HomeViewController.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		883B8ABE26F687D20030CE01 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				883B8ABF26F687DF0030CE01 /* QuestionViewController.swift */,
+				883B8AC026F687DF0030CE01 /* QuestionViewController.xib */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,7 @@
 			files = (
 				883B8AAA26F67B6D0030CE01 /* LaunchScreen.storyboard in Resources */,
 				883B8AA726F67B6D0030CE01 /* Assets.xcassets in Resources */,
+				883B8AC226F687DF0030CE01 /* QuestionViewController.xib in Resources */,
 				883B8ABD26F681310030CE01 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +183,7 @@
 			files = (
 				883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */,
 				883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */,
+				883B8AC126F687DF0030CE01 /* QuestionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
