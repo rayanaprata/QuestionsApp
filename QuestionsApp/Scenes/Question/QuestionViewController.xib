@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="QuestionsApp" customModuleProvider="target">
             <connections>
+                <outlet property="labelQuestion" destination="FjE-ny-zev" id="6fn-3z-cdo"/>
                 <outlet property="questionButton" destination="PKH-gq-9Hm" id="pUi-gM-K9m"/>
                 <outlet property="tableView" destination="sfc-cR-e0z" id="ddC-H4-UFm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

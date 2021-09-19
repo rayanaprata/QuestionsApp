@@ -55,10 +55,10 @@ class AnswerCell: UITableViewCell {
         }
     }
 
-//    override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
-//
-//        // Configure the view for the selected state
-//    }
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        viewBackground.backgroundColor = selected ? UIColor(red: 0.90, green: 0.91, blue: 1.00, alpha: 1.00) : .white
+        viewBackground.layer.borderColor = selected ? UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00).cgColor : UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00).cgColor
+        labelTitle.textColor = selected ? UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00) : .black
+    }
     
 }

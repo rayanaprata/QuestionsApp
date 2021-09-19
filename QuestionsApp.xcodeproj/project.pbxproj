@@ -18,6 +18,7 @@
 		883B8AC726F68FB10030CE01 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AC526F68FB10030CE01 /* ResultViewController.xib */; };
 		883B8ACC26F6A2CA0030CE01 /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8ACA26F6A2CA0030CE01 /* AnswerCell.swift */; };
 		883B8ACD26F6A2CA0030CE01 /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883B8ACB26F6A2CA0030CE01 /* AnswerCell.xib */; };
+		885D619E26F796E70053F8FF /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D619D26F796E70053F8FF /* QuestionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		883B8AC526F68FB10030CE01 /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
 		883B8ACA26F6A2CA0030CE01 /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
 		883B8ACB26F6A2CA0030CE01 /* AnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		885D619D26F796E70053F8FF /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionModel.swift; path = ../../../../../../Documents/QuestionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		883B8ABE26F687D20030CE01 /* Question */ = {
 			isa = PBXGroup;
 			children = (
+				885D619C26F796CC0053F8FF /* Model */,
 				883B8AC826F6A2900030CE01 /* View */,
 				883B8ABF26F687DF0030CE01 /* QuestionViewController.swift */,
 				883B8AC026F687DF0030CE01 /* QuestionViewController.xib */,
@@ -144,6 +147,14 @@
 				883B8ACB26F6A2CA0030CE01 /* AnswerCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		885D619C26F796CC0053F8FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885D619D26F796E70053F8FF /* QuestionModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */,
 				883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */,
 				883B8AC126F687DF0030CE01 /* QuestionViewController.swift in Sources */,
+				885D619E26F796E70053F8FF /* QuestionModel.swift in Sources */,
 				883B8AC626F68FB10030CE01 /* ResultViewController.swift in Sources */,
 				883B8ACC26F6A2CA0030CE01 /* AnswerCell.swift in Sources */,
 			);

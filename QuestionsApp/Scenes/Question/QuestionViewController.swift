@@ -9,8 +9,20 @@ import UIKit
 
 class QuestionViewController: UIViewController, UITableViewDataSource {
         
+    let question = QuestionModel(question: "Qual nome do gato da Rayana?",
+                                  answer: [
+                                    "Amora",
+                                    "Ameixa",
+                                    "Pizza",
+                                    "Sushi"
+                                  ],
+                                  answerCorrect: 3)
+    
+    var questionSelected: String?
+    
     @IBOutlet weak var questionButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelQuestion: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +35,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource {
         navigationItem.backBarButtonItem?.tintColor = UIColor.white
         navigationItem.backButtonTitle = ""
         
+        labelQuestion.text = question.question
         questionButton.layer.cornerRadius = 30
         setupUI()
     }
@@ -34,12 +47,22 @@ class QuestionViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return question.answer.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let answer = question.answer[indexPath.row]
+        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "AnswerCell") as? AnswerCell {
-            cell.setup(title: "Resposta", style: .correct)
+            
+            let style: AnswerCell.Style = .blank
+            
+//            if questionSelected == question.answerCorrect {
+//                style = .correct
+//            }
+            
+            cell.setup(title: answer, style: style)
             return cell
         }
         
