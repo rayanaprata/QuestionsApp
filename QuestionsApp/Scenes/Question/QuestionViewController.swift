@@ -12,11 +12,11 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
     let question = QuestionModel(question: "Qual nome do gato da Rayana?",
                                   answer: [
                                     "Amora",
-                                    "Ameixa",
+                                    "Sushi",
                                     "Pizza",
-                                    "Sushi"
+                                    "Ameixa"
                                   ],
-                                  answerCorrect: 3)
+                                  answerCorrect: 1)
     
     var questionSelected: Int?
     var indexSelected: IndexPath?
@@ -56,6 +56,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
             }
             
             questionButton.layer.backgroundColor = UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00).cgColor
+            questionButton.setTitle("Próxima pergunta", for: .normal)
         }
     }
     
@@ -87,6 +88,5 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
         indexSelected = indexPath
         questionSelected = indexPath.row
     }
-    
     
 }

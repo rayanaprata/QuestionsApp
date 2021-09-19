@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResultViewController" customModule="QuestionsApp" customModuleProvider="target">
             <connections>
+                <outlet property="labelResult" destination="PuG-Qf-Nv9" id="EQQ-88-YCG"/>
                 <outlet property="resultView" destination="NU3-3Q-uIa" id="ul8-EV-b1f"/>
-                <outlet property="tryAgainButton" destination="RHz-v9-gVP" id="dXc-VL-g3H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

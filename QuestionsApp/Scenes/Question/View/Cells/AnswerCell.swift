@@ -27,11 +27,9 @@ class AnswerCell: UITableViewCell {
     
     func setup (title: String, style: Style) {
         labelTitle.text = title
-        
         viewBackground.layer.cornerRadius = 20
         viewBackground.layer.borderWidth = 1
-        
-       setStyle(style)
+        setStyle(style)
     }
     
     func setStyle(_ style: Style) {

@@ -28,7 +28,6 @@ class HomeViewController: UIViewController {
     @IBAction func handlerButtonStartQuiz(_ sender: Any) {
         let viewController = QuestionViewController()
         navigationController?.pushViewController(viewController, animated: true)
-//        present(viewController, animated: true, completion: nil)
     }
     
 }
