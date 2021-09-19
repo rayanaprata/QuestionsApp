@@ -16,13 +16,19 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Perguntas e Respostas"
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.46, green: 0.55, blue: 1.00, alpha: 1.00)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationItem.backButtonTitle = ""
+
         startView.layer.cornerRadius = 30
         startButton.layer.cornerRadius = 30
     }
     
     @IBAction func handlerButtonStartQuiz(_ sender: Any) {
         let viewController = QuestionViewController()
-        present(viewController, animated: true, completion: nil)
+        navigationController?.pushViewController(viewController, animated: true)
+//        present(viewController, animated: true, completion: nil)
     }
     
 }

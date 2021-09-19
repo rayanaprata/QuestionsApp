@@ -14,6 +14,9 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Perguntas e Respostas"
+        navigationController?.navigationBar.barTintColor = UIColor(red: 0.46, green: 0.55, blue: 1.00, alpha: 1.00)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         resultView.layer.cornerRadius = 30
     }
     

@@ -11,7 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionViewController" customModule="QuestionsApp" customModuleProvider="target">
             <connections>
-                <outlet property="answerButton" destination="PKH-gq-9Hm" id="Y8w-q4-5lb"/>
+                <outlet property="questionButton" destination="PKH-gq-9Hm" id="pUi-gM-K9m"/>
+                <outlet property="tableView" destination="sfc-cR-e0z" id="ddC-H4-UFm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,17 +22,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Respostas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VwQ-xf-SMZ">
-                    <rect key="frame" x="20" y="262" width="101" height="35"/>
+                    <rect key="frame" x="20" y="269" width="101" height="24"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <color key="textColor" red="0.60000002379999995" green="0.6549019814" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-cR-e0z">
-                    <rect key="frame" x="20" y="305" width="374" height="395"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gs8-pu-jzn">
                     <rect key="frame" x="20" y="80" width="374" height="174"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,10 +42,12 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-gq-9Hm">
-                    <rect key="frame" x="20" y="740" width="374" height="57"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKH-gq-9Hm">
+                    <rect key="frame" x="20" y="782" width="374" height="60"/>
                     <color key="backgroundColor" red="0.82745099070000006" green="0.83137255909999996" blue="0.83137255909999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Xkz-21-1BP"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Responder">
@@ -59,9 +57,24 @@
                         <action selector="handlerButtonNextPage:" destination="-1" eventType="touchUpInside" id="wPR-78-DXH"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sfc-cR-e0z">
+                    <rect key="frame" x="20" y="309" width="374" height="470"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="470" id="bnX-tJ-tEV"/>
+                    </constraints>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PKH-gq-9Hm" secondAttribute="bottom" constant="20" id="GRa-5x-cS7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sfc-cR-e0z" secondAttribute="trailing" constant="20" id="dH5-bV-0tf"/>
+                <constraint firstItem="PKH-gq-9Hm" firstAttribute="top" secondItem="sfc-cR-e0z" secondAttribute="bottom" constant="15" id="fd6-Vb-9D7"/>
+                <constraint firstItem="PKH-gq-9Hm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fne-bI-8iQ"/>
+                <constraint firstItem="sfc-cR-e0z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="h1M-18-JeW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PKH-gq-9Hm" secondAttribute="trailing" constant="20" id="zbU-1S-DZx"/>
+            </constraints>
             <point key="canvasLocation" x="40.579710144927539" y="93.75"/>
         </view>
     </objects>
