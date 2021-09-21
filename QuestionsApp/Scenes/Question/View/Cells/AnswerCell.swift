@@ -8,15 +8,6 @@
 import UIKit
 
 class AnswerCell: UITableViewCell {
-    
-    enum Style {
-        case blank
-        case selected
-        case correct
-        case incorrect
-    }
-    
-    var style: Style = .blank
 
     @IBOutlet weak var viewBackground: UIView!
     @IBOutlet weak var labelTitle: UILabel!
@@ -25,14 +16,26 @@ class AnswerCell: UITableViewCell {
         super.awakeFromNib()
     }
     
+<<<<<<< Updated upstream
     func setup (title: String, style: Style) {
         labelTitle.text = title
         
         viewBackground.layer.cornerRadius = 20
         viewBackground.layer.borderWidth = 1
         
+=======
+    func setup (model: AnswerModel) {
+        labelTitle.text = model.name
+        viewBackground.layer.cornerRadius = 20
+        viewBackground.layer.borderWidth = 1
+        setStyle(model.style)
+    }
+    
+    func setStyle(_ style: AnswerModel.Style) {
+>>>>>>> Stashed changes
         switch style {
         case .blank:
+            labelTitle.textColor = UIColor(red: 0.13, green: 0.13, blue: 0.13, alpha: 1.00)
             viewBackground.backgroundColor = .white
             viewBackground.layer.borderColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00).cgColor
             
@@ -54,11 +57,14 @@ class AnswerCell: UITableViewCell {
             
         }
     }
+<<<<<<< Updated upstream
 
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)
 //
 //        // Configure the view for the selected state
 //    }
+=======
+>>>>>>> Stashed changes
     
 }

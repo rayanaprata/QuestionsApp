@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9cN-ye-iFM">
-                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                        <rect key="frame" x="0.0" y="3" width="560" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G2K-hy-Zsd">
                                 <rect key="frame" x="30" y="8" width="501" height="57"/>
@@ -37,9 +37,9 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="9cN-ye-iFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TO3-0z-Ox4"/>
+                    <constraint firstItem="9cN-ye-iFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="8Ad-ze-YFE"/>
                     <constraint firstAttribute="trailing" secondItem="9cN-ye-iFM" secondAttribute="trailing" id="ay5-lj-Oup"/>
-                    <constraint firstAttribute="bottom" secondItem="9cN-ye-iFM" secondAttribute="bottom" id="cYC-JK-8ED"/>
+                    <constraint firstAttribute="bottom" secondItem="9cN-ye-iFM" secondAttribute="bottom" constant="3" id="gOR-66-RG1"/>
                     <constraint firstItem="9cN-ye-iFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mxj-Jc-4aK"/>
                 </constraints>
             </tableViewCellContentView>

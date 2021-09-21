@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="QuestionsApp" customModuleProvider="target">
             <connections>
+                <outlet property="labelDescription" destination="g3D-xb-O96" id="Wm7-10-Oq4"/>
                 <outlet property="startButton" destination="PE8-c3-BX8" id="rII-MV-u8U"/>
                 <outlet property="startView" destination="tPr-rq-9fe" id="kWW-EU-MAp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -35,7 +36,7 @@
                             <rect key="frame" x="17" y="79" width="341" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" red="0.14658301770000001" green="0.14658301770000001" blue="0.14658301770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="PE8-c3-BX8">

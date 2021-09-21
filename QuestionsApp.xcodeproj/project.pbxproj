@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88094A0826F8177D001E3714 /* AnswerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88094A0726F8177D001E3714 /* AnswerModel.swift */; };
 		883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B8A9D26F67B6C0030CE01 /* AppDelegate.swift */; };
 		883B8AA726F67B6D0030CE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA626F67B6D0030CE01 /* Assets.xcassets */; };
 		883B8AAA26F67B6D0030CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883B8AA826F67B6D0030CE01 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88094A0726F8177D001E3714 /* AnswerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerModel.swift; sourceTree = "<group>"; };
 		883B8A9A26F67B6C0030CE01 /* QuestionsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestionsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B8A9D26F67B6C0030CE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		883B8AA626F67B6D0030CE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -146,6 +148,18 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+<<<<<<< Updated upstream
+=======
+		885D619C26F796CC0053F8FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				885D619D26F796E70053F8FF /* QuestionModel.swift */,
+				88094A0726F8177D001E3714 /* AnswerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+>>>>>>> Stashed changes
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -221,6 +235,7 @@
 			files = (
 				883B8A9E26F67B6C0030CE01 /* AppDelegate.swift in Sources */,
 				883B8ABC26F681310030CE01 /* HomeViewController.swift in Sources */,
+				88094A0826F8177D001E3714 /* AnswerModel.swift in Sources */,
 				883B8AC126F687DF0030CE01 /* QuestionViewController.swift in Sources */,
 				883B8AC626F68FB10030CE01 /* ResultViewController.swift in Sources */,
 				883B8ACC26F6A2CA0030CE01 /* AnswerCell.swift in Sources */,
