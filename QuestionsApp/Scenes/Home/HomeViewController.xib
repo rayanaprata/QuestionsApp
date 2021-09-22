@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="QuestionsApp" customModuleProvider="target">
             <connections>
+<<<<<<< Updated upstream
+=======
+                <outlet property="labelDescription" destination="g3D-xb-O96" id="njW-6k-9rj"/>
+>>>>>>> Stashed changes
                 <outlet property="startButton" destination="PE8-c3-BX8" id="rII-MV-u8U"/>
                 <outlet property="startView" destination="tPr-rq-9fe" id="kWW-EU-MAp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

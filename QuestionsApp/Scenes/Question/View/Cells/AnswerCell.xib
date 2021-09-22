@@ -32,20 +32,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="JTj-tT-vfn"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="dQY-kR-nU7"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+<<<<<<< Updated upstream
                     <constraint firstItem="9cN-ye-iFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TO3-0z-Ox4"/>
                     <constraint firstAttribute="trailing" secondItem="9cN-ye-iFM" secondAttribute="trailing" id="ay5-lj-Oup"/>
                     <constraint firstAttribute="bottom" secondItem="9cN-ye-iFM" secondAttribute="bottom" id="cYC-JK-8ED"/>
+=======
+                    <constraint firstAttribute="bottom" secondItem="9cN-ye-iFM" secondAttribute="bottom" constant="3" id="F29-a7-ycC"/>
+                    <constraint firstItem="9cN-ye-iFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="TO3-0z-Ox4"/>
+                    <constraint firstAttribute="trailing" secondItem="9cN-ye-iFM" secondAttribute="trailing" id="ay5-lj-Oup"/>
+>>>>>>> Stashed changes
                     <constraint firstItem="9cN-ye-iFM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mxj-Jc-4aK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="labelTitle" destination="G2K-hy-Zsd" id="ZQz-Ji-gya"/>
+                <outlet property="labelName" destination="G2K-hy-Zsd" id="KxQ-2G-np1"/>
                 <outlet property="viewBackground" destination="9cN-ye-iFM" id="QJ3-vu-HiY"/>
             </connections>
             <point key="canvasLocation" x="-100.00000000000001" y="28.125"/>
