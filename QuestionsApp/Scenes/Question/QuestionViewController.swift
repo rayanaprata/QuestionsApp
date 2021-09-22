@@ -35,10 +35,8 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBAction func handlerButtonAnswer(_ sender: Any) {
         
         if questions[indexQuestion].isAnswer {
-            // Executar a açao do botao Prox Perg
-            
             indexQuestion += 1
-            
+
             if indexQuestion < questions.count {
                 updateLayout()
             } else {
@@ -47,11 +45,9 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
             }
 
             questionButton.setTitle("Responder", for: .normal)
+            questionButton.layer.backgroundColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00).cgColor
             
         } else {
-            
-            //Acontece quando clica no bota responder
-            
             for indexAnswer in 0..<questions[indexQuestion].answer.count {
                 if indexAnswer == questions[indexQuestion].answerCorrect {
                     if questions[indexQuestion].answer[indexAnswer].style == .selected {
@@ -66,6 +62,11 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
             tableView.reloadData()
             questions[indexQuestion].isAnswer = true
             questionButton.setTitle("Próxima Pergunta", for: .normal)
+            
+            if indexQuestion == questions.count-1 {
+                questionButton.setTitle("Finalizar", for: .normal)
+            }
+            
         }
         
     }
@@ -114,6 +115,7 @@ class QuestionViewController: UIViewController, UITableViewDataSource, UITableVi
         
         for indexAnswer in 0..<questions[indexQuestion].answer.count {
             questions[indexQuestion].answer[indexAnswer].style = indexAnswer == indexPath.row ? .selected : .blank
+            questionButton.layer.backgroundColor = UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00).cgColor
         }
         
         tableView.reloadData()

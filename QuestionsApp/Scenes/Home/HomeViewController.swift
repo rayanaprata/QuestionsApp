@@ -9,32 +9,32 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    var question1 = QuestionModel(title: "Pergunta 1",
+    var question1 = QuestionModel(title: "Swift is a powerful and intuitive general-purpose programming language developed by Apple. When did your development start?",
                                   answer: [
-                                    AnswerModel(name: "A", style: .blank),
-                                    AnswerModel(name: "B", style: .blank),
-                                    AnswerModel(name: "C", style: .blank),
-                                    AnswerModel(name: "D", style: .blank),
+                                    AnswerModel(name: "Started in August 2009", style: .blank),
+                                    AnswerModel(name: "Started in July 2010", style: .blank),
+                                    AnswerModel(name: "Started in April 2011", style: .blank),
+                                    AnswerModel(name: "Started in June 2010", style: .blank),
+                                  ],
+                                  answerCorrect: 1)
+    
+    var question2 = QuestionModel(title: "Which of the following statements about comments on Swift is correct?",
+                                  answer: [
+                                    AnswerModel(name: "Single line comments are created using //", style: .blank),
+                                    AnswerModel(name: "Multiline comments are created using ;;", style: .blank),
+                                    AnswerModel(name: "Single line comments are created using \\", style: .blank),
+                                    AnswerModel(name: "None of the previous answers", style: .blank),
                                   ],
                                   answerCorrect: 0)
     
-    var question2 = QuestionModel(title: "Pergunta 2",
+    var question3 = QuestionModel(title: "How to declare a constant in swift?",
                                   answer: [
-                                    AnswerModel(name: "A2", style: .blank),
-                                    AnswerModel(name: "B2", style: .blank),
-                                    AnswerModel(name: "C2", style: .blank),
-                                    AnswerModel(name: "D2", style: .blank),
+                                    AnswerModel(name: "con", style: .blank),
+                                    AnswerModel(name: "lets", style: .blank),
+                                    AnswerModel(name: "const", style: .blank),
+                                    AnswerModel(name: "let", style: .blank),
                                   ],
-                                  answerCorrect: 0)
-    
-    var question3 = QuestionModel(title: "Pergunta 3",
-                                  answer: [
-                                    AnswerModel(name: "A3", style: .blank),
-                                    AnswerModel(name: "B3", style: .blank),
-                                    AnswerModel(name: "C3", style: .blank),
-                                    AnswerModel(name: "D3", style: .blank),
-                                  ],
-                                  answerCorrect: 0)
+                                  answerCorrect: 3)
     
     lazy var questions: [QuestionModel] = [
         question1,
