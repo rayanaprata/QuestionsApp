@@ -8,8 +8,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-<<<<<<< Updated upstream
-=======
     
     var question1 = QuestionModel(title: "Pergunta 1",
                                   answer: [
@@ -43,19 +41,15 @@ class HomeViewController: UIViewController {
         question2,
         question3
     ]
->>>>>>> Stashed changes
 
     @IBOutlet weak var startView: UIView!
     @IBOutlet weak var startButton: UIButton!
-    
+    @IBOutlet weak var labelDescription: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< Updated upstream
-        title = "Perguntas e Respostas"
-=======
 
         
         setupUI()
@@ -70,22 +64,14 @@ class HomeViewController: UIViewController {
         
         title = "Perguntas e respostas"
         labelDescription.text = "Responda \(questions.count) perguntas e veja sua pontuação no fim!"
->>>>>>> Stashed changes
         navigationController?.navigationBar.barTintColor = UIColor(red: 0.46, green: 0.55, blue: 1.00, alpha: 1.00)
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         navigationItem.backButtonTitle = ""
 
         startView.layer.cornerRadius = 30
         startButton.layer.cornerRadius = 30
-<<<<<<< Updated upstream
-    }
-    
-    @IBAction func handlerButtonStartQuiz(_ sender: Any) {
-        let viewController = QuestionViewController()
-        navigationController?.pushViewController(viewController, animated: true)
-=======
         
->>>>>>> Stashed changes
     }
     
 }

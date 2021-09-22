@@ -25,18 +25,6 @@ class AnswerCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-<<<<<<< Updated upstream
-    func setup (title: String, style: Style) {
-        labelTitle.text = title
-        viewBackground.layer.cornerRadius = 20
-        viewBackground.layer.borderWidth = 1
-        setStyle(style)
-    }
-    
-    func setStyle(_ style: Style) {
-        switch style {
-        case .blank:
-=======
     func setup (model: AnswerModel) {
         labelName.text = model.name
         
@@ -50,7 +38,6 @@ class AnswerCell: UITableViewCell {
         switch style {
         case .blank:
             labelName.textColor = .black
->>>>>>> Stashed changes
             viewBackground.backgroundColor = .white
             viewBackground.layer.borderColor = UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00).cgColor
             
@@ -71,15 +58,6 @@ class AnswerCell: UITableViewCell {
             
         }
     }
-<<<<<<< Updated upstream
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        viewBackground.backgroundColor = selected ? UIColor(red: 0.90, green: 0.91, blue: 1.00, alpha: 1.00) : .white
-        viewBackground.layer.borderColor = selected ? UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00).cgColor : UIColor(red: 0.83, green: 0.83, blue: 0.83, alpha: 1.00).cgColor
-        labelTitle.textColor = selected ? UIColor(red: 0.52, green: 0.59, blue: 1.00, alpha: 1.00) : .black
-    }
-=======
 
->>>>>>> Stashed changes
     
 }
